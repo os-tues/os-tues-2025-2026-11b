@@ -1,0 +1,8 @@
+# Ignore all files and directories at the root level
+/*
+
+# Un-ignore thought lectures directories
+!/00-course-structure
+
+# Un-ignore this .gitignore file
+!/.gitignore

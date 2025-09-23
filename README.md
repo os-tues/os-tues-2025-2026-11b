@@ -17,7 +17,7 @@
 
 ### Теория
 
-<!-- - [Тема 0: Структура на курса по операционни системи.](./theory/00-course-structure) -->
+- [Тема 0: Структура на курса по операционни системи.](./theory/00-course-structure)
 <!-- - [Тема 1: Структура на компютърните системи.](./theory/01-computer-systems-structure) -->
 <!-- - [Тема 2: Компютърни системи. (продължение)](./theory/02-computer-systems-continuation) -->
 <!-- - [Тема 3: Въведение в операционните системи.](./theory/03-operating-systems-introduction) -->

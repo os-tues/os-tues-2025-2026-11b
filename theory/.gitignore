@@ -3,6 +3,7 @@
 
 # Un-ignore thought lectures directories
 !/00-course-structure
+!/01-computer-systems-structure
 
 # Un-ignore this .gitignore file
 !/.gitignore

@@ -2,7 +2,7 @@
 /*
 
 # Un-ignore thought lectures directories
-
+!/01-file-descriptors
 
 # Un-ignore this .gitignore file
 !/.gitignore

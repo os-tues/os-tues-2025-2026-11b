@@ -1,13 +1,18 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <sys/wait.h>
+#include <string.h>
 
-int main(int argc, char const *argv[])
+int main(int argc, char **argv)
 {
+    if (argc < 2) {
+        char err[] = "Invalid number of arguments.\n";
+        write(STDERR_FILENO, err, strlen(err) + 1);
+        return 1;
+    }
 
     while (1)
     {
-
         int pid = fork();
 
         if (pid == -1)
@@ -22,7 +27,8 @@ int main(int argc, char const *argv[])
             // printf("child proccess\n");
 
             // if (execlp("/bin/lsdlksajgf", "/bin/ls", "-l", "-a", NULL) == -1) {
-            execlp("/bin/ls", "/bin/ls", "-l", "-a", NULL);
+            // execlp(argv[1], argv[1], "-l", "-a", NULL);
+            execv(argv[1], &argv[1]);
             perror("exec");
             return 1;
             // }
@@ -32,8 +38,10 @@ int main(int argc, char const *argv[])
         {
             // Parent proccess
             // printf("parent proccess\n");
-            waitpid(pid, NULL, 0);
+            int status;
+            waitpid(pid, &status, 0);
             sleep(2);
+            printf("\n\nnstatus: %d\n\n", status);
             // printf("child proccess is done\n");
         }
     }

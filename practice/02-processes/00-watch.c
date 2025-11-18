@@ -28,7 +28,8 @@ int main(int argc, char **argv)
 
             // if (execlp("/bin/lsdlksajgf", "/bin/ls", "-l", "-a", NULL) == -1) {
             // execlp(argv[1], argv[1], "-l", "-a", NULL);
-            execv(argv[1], &argv[1]);
+            //     date     ["date, "-U"]
+            execvp(argv[1], &argv[1]);
             perror("exec");
             return 1;
             // }
@@ -40,8 +41,10 @@ int main(int argc, char **argv)
             // printf("parent proccess\n");
             int status;
             waitpid(pid, &status, 0);
+            printf("\n\nraw status: %d\n", status);
+            printf("WIFEXITED: %d\n", WIFEXITED(status));
+            printf("WEXITSTATUS: %d\n", WEXITSTATUS(status));
             sleep(2);
-            printf("\n\nnstatus: %d\n\n", status);
             // printf("child proccess is done\n");
         }
     }

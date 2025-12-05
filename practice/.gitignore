@@ -4,6 +4,7 @@
 # Un-ignore thought lectures directories
 !/01-file-descriptors
 !/02-processes
+!/03-threads
 
 # Un-ignore this .gitignore file
 !/.gitignore

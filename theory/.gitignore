@@ -4,6 +4,9 @@
 # Un-ignore thought lectures directories
 !/00-course-structure
 !/01-computer-systems-structure
+!/02-computer-systems-continuation
+!/03-operating-systems-introduction
+!/04-threads-and-syncronization
 
 # Un-ignore this .gitignore file
 !/.gitignore

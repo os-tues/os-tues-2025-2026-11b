@@ -6,6 +6,7 @@
 !/02-processes
 !/03-threads
 !/05-pipes
+!/06-sockets
 
 # Un-ignore this .gitignore file
 !/.gitignore

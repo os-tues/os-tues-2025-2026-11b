@@ -8,6 +8,9 @@
 !/03-operating-systems-introduction
 !/04-threads-and-syncronization
 !/05-shellscripts
+!/06-process-communication-with-pipes
+!/07-sockets
+!/08-files-and-filesystems
 
 # Un-ignore this .gitignore file
 !/.gitignore
